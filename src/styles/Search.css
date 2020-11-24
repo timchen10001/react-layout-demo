@@ -1,0 +1,146 @@
+@media screen and (min-width: 500px) {
+  .search {
+    display: stretch;
+    height: 50px;
+  }
+
+  .search__input {
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    margin-bottom: 4%;
+    border-radius: 999px;
+    border: 1px solid rgb(230, 229, 229);
+    height: fit-content;
+    margin: 0 auto;
+    min-width: 450px;
+  }
+
+  .search__input > input {
+    flex: 1;
+    font-size: medium;
+    padding: 7px 16px;
+    border: none;
+  }
+
+  .search__input > input:focus {
+    outline-width: 0;
+  }
+
+  .search__input:focus-within {
+    box-shadow: 1px 1px 0px 0px rgb(153, 152, 152);
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2)),
+      rgba(0, 0, 0, 0.87);
+    border: 1px solid rgb(230, 230, 230);
+  }
+
+  .search__input > .MuiSvgIcon-root:nth-child(1) {
+    color: grey;
+    cursor: pointer;
+  }
+
+  .search__input > .MuiSvgIcon-root:nth-child(1):hover {
+    color: rgb(71, 71, 71);
+    cursor: pointer;
+}
+
+  .search__input > input:focus {
+    outline-style: none;
+  }
+
+  .search__buttons {
+    /* background-color: green; */
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  .search__buttons button {
+    max-height: 40px;
+    margin: 0 10px;
+    border: 1px solid white;
+    background-color: rgb(240, 240, 240, 0.75);
+    color: grey;
+    font-size: small;
+  }
+
+  .search__buttons button:hover {
+    box-shadow: 0px 1px 0px 0px rgba(195, 195, 195, 0.87);
+    color: #222;
+    background-image: -webkit-linear-gradient(
+      top,
+      rgba(240, 240, 240, 0.87),
+      rgba(240, 240, 240, 0.1)
+    );
+    border: 1px solid lightgrey;
+  }
+
+  .hide__buttons {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .search__input {
+        /* background-color: pink; */
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+        border-radius: 999px;
+        border: 1px solid rgb(230, 229, 229);
+        height: fit-content;
+        margin: 20px auto;
+    }
+    
+    .search__input > input {
+        flex: 1;
+        font-size: medium;
+        padding: 7px 16px;
+        border: none;
+    }
+
+    .search__input > input:focus {
+      outline-style: none;
+  }
+    
+    .search__input:focus-within {
+        box-shadow: 0px -2px -3px 0px rgb(153, 152, 152);
+        background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.87);
+        border: 1px solid  rgb(230, 230, 230);
+        
+    }
+    
+    .search__input > .MuiSvgIcon-root:nth-child(1) {
+        color: grey;
+        cursor: pointer;
+    }
+    
+    
+    .search__buttons {
+        /* background-color: green; */
+        display: flex;
+        height: fit-content;
+        width: 100%;
+        justify-content: center;
+        margin-top: 35px;
+    }
+    
+    .search__buttons button {
+        max-height: 40px;
+        margin: 0 10px;
+        border: 1px solid white;
+        background-color: rgb(240, 240, 240, 0.75);
+        color: grey;
+        font-size: 2vw;
+    }
+    
+    .hide__buttons {
+        display: none;
+    }
+    
+}

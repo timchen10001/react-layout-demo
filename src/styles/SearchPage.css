@@ -1,0 +1,231 @@
+@media (min-width: 900px) {
+  .searchPage__headerBody > .search > .search__input {
+    margin-top: 0;
+    width: unset;
+    margin: unset;
+    max-width: unset;
+    height: 30px;
+    width: 650px;
+  }
+
+  .searchPage {
+    max-width: 100vw;
+    height: fit-content;
+  }
+
+  .searchPage__header {
+    background-color: white;
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding-top: 20px;
+    padding-left: 22px;
+    width: 100vw;
+    align-items: flex-start;
+    z-index: 100;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .searchPage__headerLogo {
+    object-fit: contain;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 45px;
+  }
+
+  .searchPage__options {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .searchPage__optionsLeft {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .searchPage__optionsRight {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .searchPage__optionsRight a,
+  .searchPage__optionsLeft a {
+    text-decoration: inherit;
+    color: rgba(100, 100, 100, 0.87);
+    margin: 13px 5px;
+  }
+
+  .searchPage__optionsRight > .MuiSvgIcon-root {
+    margin: 13px 5px;
+  }
+
+  .searchPage__option > button {
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .searchPage__option a:hover {
+    color: #4c8bf5;
+  }
+
+  .searchPage__option:focus {
+    border-bottom: 3px solid #4c8bf5;
+    padding-bottom: 3px;
+    font: #4c8bf5;
+  }
+
+  .searchPage__resultImage {
+    object-fit: contain;
+    height: 14px;
+    margin-right: 7px;
+  }
+
+  .searchPage__results {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    width: 650px;
+  }
+
+  .searchPage__resultCount {
+    margin-top: 15px;
+  }
+
+  .searchPage__result {
+    margin: 15px 0;
+  }
+
+  .searchPage__result a {
+    text-decoration: inherit;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: small;
+    font-weight: 600;
+
+  }
+
+  .searchPage__resultTitle h2 {
+    color: #3734d8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 5px 0;
+  }
+
+  .searchPage__resultTitle h2:hover {
+    text-decoration: underline;
+  }
+
+  .searchPage__snippet {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7)
+  }
+}
+
+/* mobile device */
+
+@media (max-width: 900px) {
+  .searchPage__headerBody > .search > .search__input {
+    margin: unset;
+    max-width: unset;
+    height: max-content;
+    width: 50vw;
+    min-width: fit-content;
+  }
+
+  .searchPage__headerBody > .search > .search__input:focus-within {
+    border: inherit;
+    background-image: unset;
+    box-shadow: unset;
+  }
+
+  .searchPage {
+    max-width: 100vw;
+    height: fit-content;
+  }
+
+  .searchPage__headerBody > .search > .search__input .MuiSvgIcon-root:nth-child(3) {
+      display: none;
+  }
+
+  .searchPage__headerBody > .search > .search__input input {
+    width: 100px;
+    background-color: 0 0;
+  }
+
+  .searchPage__header {
+    background-color: white;
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    align-items: flex-start;
+    z-index: 100; 
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .searchPage__headerLogo {
+    object-fit: contain;
+    height: 30px;
+    margin: 0 20px;
+    margin-top: 12px;
+  }
+
+  .searchPage__results {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 12vw;
+    width: 80vw;
+  }
+
+  .searchPage__resultCount {
+    margin-top: 8px;
+    font-size: 8px;
+  }
+
+  .searchPage__result {
+    margin: 6px 0;
+  }
+
+  .searchPage__result a {
+    text-decoration: inherit;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: x-small;
+    font-weight: 600;
+  }
+
+  @media (max-width: 550px) {
+    .searchPage__resultTitle h2 {
+        color: #3734d8;
+        font-family: Helvetica, sans-serif;
+        margin: 3px 0;
+        font-size:  14px;
+      }
+  }
+
+  @media (min-width: 550px) {
+    .searchPage__resultTitle h2 {
+        color: #3734d8;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 4px 0;
+        font-size:  16px;
+      }
+  }
+  
+
+  .searchPage__snippet {
+      font-size: xx-small;
+      color: rgba(0, 0, 0, 0.7);
+  }
+
+  .searchPage__resultImage {
+    display: none;
+  }
+
+  .searchPage__options {
+    display: none;
+  }
+}
+
+
