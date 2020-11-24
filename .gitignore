@@ -25,3 +25,5 @@ yarn-error.log*
 keys.js
 response.js
 outerURL.js
+
+package-lock.json
