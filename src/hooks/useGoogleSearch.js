@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import API_KEY from "../configs/keys";
+import keys from "../configs/keys";
 
-const CONTEXT_KEY = "23da9a7b64c9bd4bd";
 
 const useGoogleSearch = (term) => {
   const [data, setData] = useState(null);
@@ -9,7 +8,7 @@ const useGoogleSearch = (term) => {
   useEffect(() => {
     const fetchData = async () => {
       fetch(
-        `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${term}`
+        `https://www.googleapis.com/customsearch/v1?key=${keys.API_KEY}&cx=${keys.CONTEXT_KEY}&q=${term}`
       )
         .then((response) => response.json())
         .then((result) => {
