@@ -8,7 +8,7 @@ Project Skills
 - Firebase
 - RWD
 
-![Image](https://media.giphy.com/media/ekf8417Z32J7yIy83K/giphy.gif)
+![Image](https://res.cloudinary.com/dunc6xvuh/image/upload/v1615472881/material/giphy_1_-min_xbo4er.gif)
 
 ![Image](https://upload.cc/i1/2021/02/27/I7aLrH.png)
 
